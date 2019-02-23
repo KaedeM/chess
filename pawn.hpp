@@ -3,12 +3,14 @@
 
 using namespace std;
 
-class Pawn : public Pieces {
+class Pawn : public Piece {
     private:
-        //variable to store piece type
+        int value = 0;
+        bool changed = 0;
     public:
-        Pawn() { /*statement to set piece type*/ };
+        Pawn() {};
         
+        int getValue() { return this->value; };
 };
 
 #endif //__PAWN_HPP__

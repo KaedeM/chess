@@ -3,12 +3,13 @@
 
 using namespace std;
 
-class Queen : public Pieces {
+class Queen : public Piece {
     private:
-        //variable to store piece type
+        int value = 0;
     public:
-        Queen() { /*statement to set piece type*/ };
+        Queen() {};
         
+        int getValue() { return this->value; };
 };
 
 #endif //__QUEEN_HPP__

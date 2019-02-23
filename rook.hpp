@@ -3,12 +3,13 @@
 
 using namespace std;
 
-class Rook : public Pieces {
+class Rook : public Piece {
     private:
-        //variable to store piece type
+        int value = 0;
     public:
-        Rook() { /*statement to set piece type*/ };
+        Rook() {};
         
+        int getValue() { return this->value; };
 };
 
 #endif //__ROOK_HPP__

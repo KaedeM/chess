@@ -3,12 +3,13 @@
 
 using namespace std;
 
-class Bishop : public Pieces {
+class Bishop : public Piece {
     private:
-        //variable to store piece type
+        int value = 0;
     public:
-        Bishop() { /*statement to set piece type*/ };
+        Bishop() {};
         
+        int getValue() { return this->value; };
 };
 
 #endif //__BISHOP_HPP__
